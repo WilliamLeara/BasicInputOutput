@@ -1,0 +1,36 @@
+MITRE Copernicus Loading
+
+Thank you for using Copernicus!
+If you'd like to help us build a master list of vulnerable BIOSes,
+please email your .csv file to copernicus@mitre.org
+
+Allocating memory for ICH Parameters object
+Allocating memory for Flash Chip object
+Initializing ICH parameters
+Error: Unknown ICH: 0x9cc3.
+Error: Unknown MCH: 0x1604.
+Error initializing ICH parameters
+Cleaning up allocated memory.
+Freeing memory for Flash Chip
+Freeing memory for ICH Parameters object
+Freeing memory for Host Data
+One or more elements of Copernicus Failed. Return Status 0x00000002
+MITRE Copernicus Unloading
+MITRE Copernicus Loading
+
+Thank you for using Copernicus!
+If you'd like to help us build a master list of vulnerable BIOSes,
+please email your .csv file to copernicus@mitre.org
+
+Allocating memory for ICH Parameters object
+Allocating memory for Flash Chip object
+Initializing ICH parameters
+Error: Unknown ICH: 0x9cc3.
+Error: Unknown MCH: 0x1604.
+Error initializing ICH parameters
+Cleaning up allocated memory.
+Freeing memory for Flash Chip
+Freeing memory for ICH Parameters object
+Freeing memory for Host Data
+One or more elements of Copernicus Failed. Return Status 0x00000002
+MITRE Copernicus Unloading

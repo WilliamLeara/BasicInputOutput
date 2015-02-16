@@ -1,0 +1,43 @@
+MITRE Copernicus Loading
+
+Thank you for using Copernicus!
+If you'd like to help us build a master list of vulnerable BIOSes,
+please email your .csv file to copernicus@mitre.org
+
+Allocating memory for ICH Parameters object
+Allocating memory for MCH Parameters object
+Allocating memory for Flash Chip object
+Allocating memory for SMBIOS Parameters object
+Initializing ICH parameters
+  PCH8 family detected, vendor=8086, device=9c43
+SPIBAR physical address 0xFED1F800
+Initializing MCH parameters
+  Identified Memory Controller vendor=8086, device=0a04
+SPI Flash is in Descriptor mode
+Determining size of SPI flash chip
+  SPI Region 0 (Flash Descriptor) base = 00000000, limit = 00000fff
+  SPI Region 1 (BIOS) base = 00600000, limit = 00bfffff
+  SPI Region 2 (Management Engine) base = 00005000, limit = 005fffff
+  SPI Region 3 (Gigabit Ethernet) base = 00001000, limit = 00004fff
+  SPI Region 4 (Platform Data) not in use
+  SPI Flash chip size = 0x00c00000
+Reading entire flash address space 0 - 00c00000.
+Using Hardware Sequencing Method
+Writing flash contents to file.
+Collecting host flash security parameters
+SMRR supported
+TPM: vendor id: 0x1114
+TPM_AttemptCommand: return code = 26
+
+Writing CMOS NVRAM to file.
+Cleaning up allocated memory.
+Freeing memory for Flash Chip
+Freeing memory for MCH Parameters object
+Freeing memory mapped for SPIBAR
+Freeing memory for ICH Parameters object
+Freeing memory mapped for SMBIOS structures
+Freeing memory mapped for SMBIOS entry point
+Freeing memory for SMBIOS Parameters object
+Freeing memory for Host Data
+All measurement components of MITRE Copernicus succeeded.
+MITRE Copernicus Unloading

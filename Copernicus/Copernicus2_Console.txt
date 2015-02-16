@@ -1,0 +1,311 @@
+
+C:\Cop2\bin>sc stop opentpm 
+[SC] ControlService FAILED 1062:
+
+The service has not been started.
+
+
+C:\Cop2\bin>sc delete opentpm 
+[SC] DeleteService SUCCESS
+
+C:\Cop2\bin>sc create opentpm binpath= C:\Cop2\bin\opentpm32.sys type= kernel 
+[SC] CreateService SUCCESS
+
+C:\Cop2\bin>sc start opentpm 
+
+SERVICE_NAME: opentpm 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+        PID                : 0
+        FLAGS              : 
+
+C:\Cop2\bin>tpmtakeown.exe -pwdo password 
+sniffing send data
+00 c1 00 00 00 1e 00 00 00 7c 33 ae 5b 99 ad 80 
+07 e4 b4 5f 1e b1 30 54 b0 58 fb bd 83 9f 
+sniffing recv data
+00 c4 00 00 00 0a 00 00 00 08 
+Error Target command disabled from TPM_TakeOwnership
+
+C:\Cop2\bin>identity.exe -pwdo password -la identity 
+sniffing send data
+00 c1 00 00 00 24 00 00 00 0b 00 02 00 00 00 00 
+2f d7 07 86 40 8c e5 c6 29 5c 53 84 85 1e 30 db 
+89 44 4e 7d 
+sniffing recv data
+00 c4 00 00 00 36 00 00 00 00 83 3d b3 38 32 f5 
+a7 fb 7e e6 04 0b 66 f2 a1 8b 7a 55 45 5d 63 4e 
+12 d6 d7 fd 89 68 07 ec 32 84 8b b6 7f f0 cf 0a 
+c7 59 fb e4 26 7f 
+sniffing send data
+00 c2 00 00 00 8e 00 00 00 79 16 96 49 60 ae 52 
+63 ff 06 c7 8f 98 5b cd 28 dc 2a f0 30 f6 1d b0 
+89 a9 f8 4e 14 e9 5f 11 dc b5 c5 7f a1 0d 60 aa 
+84 bb 01 01 00 00 00 12 00 00 00 00 00 00 00 00 
+01 00 01 00 02 00 00 00 0c 00 00 08 00 00 00 00 
+02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 83 3d b3 38 af c5 48 8e 91 9d 00 bc 84 f0 d1 
+5c 04 3a f8 40 d0 1d c2 2c 00 40 fc f7 2b 26 0c 
+8c fd 85 d1 f2 f6 36 70 17 01 3e 91 59 0f 
+sniffing recv data
+00 c5 00 00 03 66 00 00 00 00 01 01 00 00 00 12 
+00 00 00 00 00 00 00 00 01 00 01 00 02 00 00 00 
+0c 00 00 08 00 00 00 00 02 00 00 00 00 00 00 00 
+00 00 00 01 00 88 5b 39 d8 ff 10 6a a0 b0 fc 9c 
+15 2a 6e dc 50 b0 9a 26 21 5d 33 11 aa f8 f8 8a 
+36 50 c9 b2 53 a8 80 16 f7 fb 8e 69 90 45 cb 26 
+8a 5e ab e1 6a 5e 61 0d 1f df da 86 a6 27 79 3b 
+8b f8 64 45 dc 18 70 e4 4d 9c fd ce 58 64 15 1b 
+03 9f 42 78 0c 67 79 4a c6 02 ea cf 55 17 a6 fe 
+ce 7f 44 ff b0 3e 99 3f 30 1a 32 73 06 2c 0b 36 
+04 01 9b 4c ce f1 21 a8 e3 f9 70 7f 9f f7 f4 cb 
+c3 fb 51 d3 4c 1f 1f 5c 9c 45 fd 99 92 33 4f 9c 
+c5 15 65 f8 67 05 5b 59 32 9f 50 d2 94 0a a7 b0 
+f9 11 08 be 82 25 a7 9c 07 c2 3c bc f4 95 22 a3 
+44 52 3c bc c8 17 1c 6a 13 4b b7 8b 74 40 1b 73 
+65 8f 9f d8 ff 10 5c 2f 6b 78 ae cc 97 6c c3 05 
+f5 a7 03 3d dd 05 83 e1 31 77 69 67 ca 64 6e 02 
+43 13 91 8d 8c c7 bc 5d 92 11 45 85 8c 1e 91 d3 
+d8 46 32 0a 51 43 d9 36 5c f0 37 6f 70 b9 74 2e 
+f9 8b 07 94 67 00 00 01 00 3c 96 56 06 8f 0a a6 
+df 02 3d 34 f6 07 49 c8 4f 7b 7d 04 37 fa 05 3e 
+96 50 8f ed 42 89 73 a8 73 34 6f 40 c4 32 3f df 
+7b 19 73 fd ae d8 e4 6b 80 49 75 b1 cb f3 6d be 
+a5 23 ea 69 ed cb 18 97 19 6c 8e bb cd aa 7b 80 
+3c 1f 83 21 d0 63 b2 08 70 51 8d 42 37 d2 83 25 
+19 10 9c 90 3c 7e 2b 34 fd de 1f c7 05 a7 b2 37 
+c7 a9 b3 7f c6 56 7f c7 f5 32 3c e7 1d 8e 02 00 
+dc 0b 3a 4a d6 79 b8 04 fc 89 e4 a2 12 ab 7a 2b 
+bc 3f e4 d9 a2 03 fd b0 4d 22 36 96 da dc ba 53 
+ba 13 1f 7c 71 f1 42 62 c3 73 91 b6 45 0d 5c f8 
+c2 6d 99 ec 65 5b 06 f3 0c d3 b9 80 99 f8 13 37 
+75 90 69 d9 9a cc ea a5 4e 96 a4 bb 38 18 a2 6a 
+4f dd aa 85 2a f6 dc 3a 2c 71 b8 0f 1a a0 39 4d 
+67 9a 9c 7c 18 59 97 29 3e 8e 13 cd 3f 18 2f 25 
+ac eb fa f0 5e fc 71 46 97 b5 30 5d ec 72 f9 43 
+35 40 dc 2d 13 01 2d 81 e0 00 00 01 00 0f 97 de 
+f2 01 75 39 7a 7e e6 cf df bb 9b 0f 2a 77 92 90 
+68 68 e0 a3 c1 c9 a0 03 aa fd d7 c2 d1 0d 6f 31 
+51 c3 0a 62 49 be 11 35 1b c5 51 bc fb 07 9b 22 
+24 aa 9b 61 4a 94 91 d1 f5 c4 a9 0c 13 5b ae f0 
+38 09 1d 04 ed eb a9 39 17 0b 9e 59 fd 07 4b 6e 
+55 e4 e3 1a 75 26 57 2f 51 d2 a6 8e ca 6e 8a 78 
+d6 1b d5 df 78 a5 5a 5f 91 eb c8 c4 e4 1a 5c d3 
+cf ec b4 c8 4b 6b a0 33 d2 c1 0c 98 53 ef 65 87 
+80 98 01 06 ac 4f f9 bd a3 16 4b d7 25 ba 5f 85 
+b1 f5 75 52 62 47 f0 10 9d 68 1d 4b 1b 04 a3 bc 
+c5 26 c9 5d bc 33 a2 bf f4 fb c6 e1 d9 30 f1 19 
+1d 4f da 71 52 80 ee 3b 43 8e 50 7c af 7e 9d cc 
+fc 4a 95 82 1a cd 81 fb 2f 1a d3 a6 90 ac 66 4c 
+06 55 1c dc d7 25 1e e2 8f 87 dd f3 87 1d 03 01 
+ea 5d 66 d7 37 f4 de e2 28 02 5f c0 82 59 34 e6 
+15 2d 76 aa d4 78 54 4a e3 fb 20 33 ca ff 95 11 
+84 f6 94 cf d9 9b 59 a4 0d 14 27 3a 56 5c 54 19 
+ae 00 8c 5d 6a 4d d6 4b e9 0e 00 49 2b 5b 17 cc 
+81 70 71 8e 35 a6 
+sniffing send data
+00 c1 00 00 00 0e 00 00 00 96 83 3d b3 38 
+sniffing recv data
+00 c4 00 00 00 0a 00 00 00 22 
+keylen: 559
+01 01 00 00 00 12 00 00 00 00 00 00 00 00 01 00 
+01 00 02 00 00 00 0c 00 00 08 00 00 00 00 02 00 
+00 00 00 00 00 00 00 00 00 01 00 88 5b 39 d8 ff 
+10 6a a0 b0 fc 9c 15 2a 6e dc 50 b0 9a 26 21 5d 
+33 11 aa f8 f8 8a 36 50 c9 b2 53 a8 80 16 f7 fb 
+8e 69 90 45 cb 26 8a 5e ab e1 6a 5e 61 0d 1f df 
+da 86 a6 27 79 3b 8b f8 64 45 dc 18 70 e4 4d 9c 
+fd ce 58 64 15 1b 03 9f 42 78 0c 67 79 4a c6 02 
+ea cf 55 17 a6 fe ce 7f 44 ff b0 3e 99 3f 30 1a 
+32 73 06 2c 0b 36 04 01 9b 4c ce f1 21 a8 e3 f9 
+70 7f 9f f7 f4 cb c3 fb 51 d3 4c 1f 1f 5c 9c 45 
+fd 99 92 33 4f 9c c5 15 65 f8 67 05 5b 59 32 9f 
+50 d2 94 0a a7 b0 f9 11 08 be 82 25 a7 9c 07 c2 
+3c bc f4 95 22 a3 44 52 3c bc c8 17 1c 6a 13 4b 
+b7 8b 74 40 1b 73 65 8f 9f d8 ff 10 5c 2f 6b 78 
+ae cc 97 6c c3 05 f5 a7 03 3d dd 05 83 e1 31 77 
+69 67 ca 64 6e 02 43 13 91 8d 8c c7 bc 5d 92 11 
+45 85 8c 1e 91 d3 d8 46 32 0a 51 43 d9 36 5c f0 
+37 6f 70 b9 74 2e f9 8b 07 94 67 00 00 01 00 3c 
+96 56 06 8f 0a a6 df 02 3d 34 f6 07 49 c8 4f 7b 
+7d 04 37 fa 05 3e 96 50 8f ed 42 89 73 a8 73 34 
+6f 40 c4 32 3f df 7b 19 73 fd ae d8 e4 6b 80 49 
+75 b1 cb f3 6d be a5 23 ea 69 ed cb 18 97 19 6c 
+8e bb cd aa 7b 80 3c 1f 83 21 d0 63 b2 08 70 51 
+8d 42 37 d2 83 25 19 10 9c 90 3c 7e 2b 34 fd de 
+1f c7 05 a7 b2 37 c7 a9 b3 7f c6 56 7f c7 f5 32 
+3c e7 1d 8e 02 00 dc 0b 3a 4a d6 79 b8 04 fc 89 
+e4 a2 12 ab 7a 2b bc 3f e4 d9 a2 03 fd b0 4d 22 
+36 96 da dc ba 53 ba 13 1f 7c 71 f1 42 62 c3 73 
+91 b6 45 0d 5c f8 c2 6d 99 ec 65 5b 06 f3 0c d3 
+b9 80 99 f8 13 37 75 90 69 d9 9a cc ea a5 4e 96 
+a4 bb 38 18 a2 6a 4f dd aa 85 2a f6 dc 3a 2c 71 
+b8 0f 1a a0 39 4d 67 9a 9c 7c 18 59 97 29 3e 8e 
+13 cd 3f 18 2f 25 ac eb fa f0 5e fc 71 46 97 b5 
+30 5d ec 72 f9 43 35 40 dc 2d 13 01 2d 81 e0 TPM_MakeIdentity returned keyblob len=559
+
+C:\Cop2\bin>loadkey.exe -hp 40000000 -ik identity.key 
+sniffing send data
+00 c1 00 00 02 3d 00 00 00 41 40 00 00 00 01 01 
+00 00 00 12 00 00 00 00 00 00 00 00 01 00 01 00 
+02 00 00 00 0c 00 00 08 00 00 00 00 02 00 00 00 
+00 00 00 00 00 00 00 01 00 88 5b 39 d8 ff 10 6a 
+a0 b0 fc 9c 15 2a 6e dc 50 b0 9a 26 21 5d 33 11 
+aa f8 f8 8a 36 50 c9 b2 53 a8 80 16 f7 fb 8e 69 
+90 45 cb 26 8a 5e ab e1 6a 5e 61 0d 1f df da 86 
+a6 27 79 3b 8b f8 64 45 dc 18 70 e4 4d 9c fd ce 
+58 64 15 1b 03 9f 42 78 0c 67 79 4a c6 02 ea cf 
+55 17 a6 fe ce 7f 44 ff b0 3e 99 3f 30 1a 32 73 
+06 2c 0b 36 04 01 9b 4c ce f1 21 a8 e3 f9 70 7f 
+9f f7 f4 cb c3 fb 51 d3 4c 1f 1f 5c 9c 45 fd 99 
+92 33 4f 9c c5 15 65 f8 67 05 5b 59 32 9f 50 d2 
+94 0a a7 b0 f9 11 08 be 82 25 a7 9c 07 c2 3c bc 
+f4 95 22 a3 44 52 3c bc c8 17 1c 6a 13 4b b7 8b 
+74 40 1b 73 65 8f 9f d8 ff 10 5c 2f 6b 78 ae cc 
+97 6c c3 05 f5 a7 03 3d dd 05 83 e1 31 77 69 67 
+ca 64 6e 02 43 13 91 8d 8c c7 bc 5d 92 11 45 85 
+8c 1e 91 d3 d8 46 32 0a 51 43 d9 36 5c f0 37 6f 
+70 b9 74 2e f9 8b 07 94 67 00 00 01 00 3c 96 56 
+06 8f 0a a6 df 02 3d 34 f6 07 49 c8 4f 7b 7d 04 
+37 fa 05 3e 96 50 8f ed 42 89 73 a8 73 34 6f 40 
+c4 32 3f df 7b 19 73 fd ae d8 e4 6b 80 49 75 b1 
+cb f3 6d be a5 23 ea 69 ed cb 18 97 19 6c 8e bb 
+cd aa 7b 80 3c 1f 83 21 d0 63 b2 08 70 51 8d 42 
+37 d2 83 25 19 10 9c 90 3c 7e 2b 34 fd de 1f c7 
+05 a7 b2 37 c7 a9 b3 7f c6 56 7f c7 f5 32 3c e7 
+1d 8e 02 00 dc 0b 3a 4a d6 79 b8 04 fc 89 e4 a2 
+12 ab 7a 2b bc 3f e4 d9 a2 03 fd b0 4d 22 36 96 
+da dc ba 53 ba 13 1f 7c 71 f1 42 62 c3 73 91 b6 
+45 0d 5c f8 c2 6d 99 ec 65 5b 06 f3 0c d3 b9 80 
+99 f8 13 37 75 90 69 d9 9a cc ea a5 4e 96 a4 bb 
+38 18 a2 6a 4f dd aa 85 2a f6 dc 3a 2c 71 b8 0f 
+1a a0 39 4d 67 9a 9c 7c 18 59 97 29 3e 8e 13 cd 
+3f 18 2f 25 ac eb fa f0 5e fc 71 46 97 b5 30 5d 
+ec 72 f9 43 35 40 dc 2d 13 01 2d 81 e0 
+sniffing recv data
+00 c4 00 00 00 0e 00 00 00 00 32 3e e7 f1 
+New Key Handle = 323EE7F1
+
+C:\Cop2\bin>sc stop flicker 
+[SC] ControlService FAILED 1062:
+
+The service has not been started.
+
+
+C:\Cop2\bin>sc delete flicker 
+[SC] DeleteService SUCCESS
+
+C:\Cop2\bin>sc create flicker binpath= C:\Cop2\bin\FlickerDrv.sys type= kernel 
+[SC] CreateService SUCCESS
+
+C:\Cop2\bin>sc start flicker 
+
+SERVICE_NAME: flicker 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+        PID                : 0
+        FLAGS              : 
+
+C:\Cop2\bin>FOR /F "usebackq" %i IN (`hostname`) DO SET MYVAR=%i 
+
+C:\Cop2\bin>SET MYVAR=william-PC 
+
+C:\Cop2\bin>set /p="william-PC"  0<nul 1>fin.txt 
+
+C:\Cop2\bin>FlickerDrvCtrl.exe in fin.txt 
+Successfully read file fin.txt (size: 10 bytes).
+Result of operation in is 0
+
+C:\Cop2\bin>FlickerDrvCtrl.exe sinit 5th_gen_i5_i7_SINIT_79.BIN 
+Successfully read file 5th_gen_i5_i7_SINIT_79.BIN (size: 87424 bytes).
+Could not perform device I/O control because The data area passed to a system call is too small.
+
+Result of operation sinit is 0
+
+C:\Cop2\bin>FlickerDrvCtrl.exe pal cop2pal.bin 
+Successfully read file cop2pal.bin (size: 251653 bytes).
+Result of operation pal is 0
+
+C:\Cop2\bin>FlickerDrvCtrl.exe go 
+Result of go is 0
+
+C:\Cop2\bin>REM FlickerDrvCtrl.exe out fout.txt 0 4 
+
+C:\Cop2\bin>REM sc stop flicker 
+
+C:\Cop2\bin>sc stop cop2 
+[SC] ControlService FAILED 1062:
+
+The service has not been started.
+
+
+C:\Cop2\bin>sc delete cop2 
+[SC] DeleteService SUCCESS
+
+C:\Cop2\bin>sc create cop2 binpath= C:\Cop2\bin\copernicus2.sys type= kernel 
+[SC] CreateService SUCCESS
+
+C:\Cop2\bin>sc start cop2 
+
+SERVICE_NAME: cop2 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+        PID                : 0
+        FLAGS              : 
+
+C:\Cop2\bin>sc stop cop2 
+
+SERVICE_NAME: cop2 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+C:\Cop2\bin>basic_quote_verify.exe 0x1234 0x5678 
+User provided nonce1 = 00001234
+User provided nonce2 = 00005678
+Generating quote...
+Passing endian-swapped nonce to the TPM: 3412000078560000341200007856000034120000
+TPM_GetIdentityKeyHandle: found key: 4d3abdaa
+PerformQuote succeeded
+Quote results: 
+
+	PCR17:ffffffffffffffffffffffffffffffffffffffff
+	PCR18:ffffffffffffffffffffffffffffffffffffffff
+	PCR19:ffffffffffffffffffffffffffffffffffffffff
+
+Successfully loaded identity key for host...
+Failed to verify signature on TPM quote for client...main exiting
+
+C:\Cop2\bin>python CopPCR17.py ..\Copernicus_TXTHEAP.bin 
+Error opening ..\Copernicus_TXTHEAP.bin for reading: "No such file or directory" ... Abort
+
+C:\Cop2\bin>python CopPCR18.py ..\Copernicus_TXTHEAP.bin ..\Copernicus_CSV_Out.csv ..\Copernicus_BIOS.bin 
+Error opening ..\Copernicus_TXTHEAP.bin for reading: "No such file or directory" ... Abort
+
+C:\Cop2\bin>sc stop opentpm 
+
+SERVICE_NAME: opentpm 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
