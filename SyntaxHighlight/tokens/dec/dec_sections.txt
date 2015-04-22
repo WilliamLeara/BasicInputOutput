@@ -1,0 +1,14 @@
+Defines
+Includes
+Guids
+Protocols
+Ppis
+PPIs
+LibraryClasses
+UserExtensions
+UserExtensions.TianoCore."ExtraFiles"
+PcdsFeatureFlag
+PcdsFixedAtBuild
+PcdsPatchableInModule
+PcdsDynamic
+PcdsDynamicEx

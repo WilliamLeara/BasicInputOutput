@@ -1,0 +1,10 @@
+narrow
+wide
+bold
+italic
+underline
+dblunder
+shadow
+emboss
+normal
+sysdefault

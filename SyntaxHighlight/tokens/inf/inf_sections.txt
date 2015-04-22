@@ -1,0 +1,16 @@
+Defines
+BuildOptions
+LibraryClasses
+Packages
+Sources
+UserExtensions
+Protocols
+Ppis
+Guids
+Depex
+Binaries
+Pcd
+PcdEx
+PatchPcd
+FixedPcd
+FeaturePcd
