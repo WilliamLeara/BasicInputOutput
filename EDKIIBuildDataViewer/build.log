@@ -1,0 +1,46 @@
+Build environment: Windows-post2008Server-6.2.9200
+Build start time: 14:14:53, Oct.14 2015
+
+WORKSPACE        = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace
+ECP_SOURCE       = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\edkcompatibilitypkg
+EDK_SOURCE       = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\edkcompatibilitypkg
+EFI_SOURCE       = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\edkcompatibilitypkg
+EDK_TOOLS_PATH   = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\basetools
+
+
+Architecture(s)  = IA32
+Build target     = DEBUG
+Toolchain        = VS2010x86
+
+Active Platform          = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Nt32Pkg.dsc
+Flash Image Definition   = c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Nt32Pkg.fdf
+Building ... c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdePkg\Library\PeiMemoryAllocationLib\PeiMemoryAllocationLib.inf [IA32]
+Building ... c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdePkg\Library\PeiServicesLib\PeiServicesLib.inf [IA32]
+Building ... c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\PeiNt32OemHookStatusCodeLib.inf [IA32]
+	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Vc\bin\cl.exe" /Foc:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Build\NT32IA32\DEBUG_VS2010x86\IA32\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\PeiNt32OemHookStatusCodeLib\OUTPUT\.\Nt32OemHookStatusCodeLib.obj /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1ib2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Gm /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Build\NT32IA32\DEBUG_VS2010x86\IA32\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\PeiNt32OemHookStatusCodeLib\DEBUG  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdePkg  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdePkg\Include  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdePkg\Include\Ia32  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdeModulePkg  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\MdeModulePkg\Include  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg  /Ic:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Include c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\Nt32OemHookStatusCodeLib.c
+Nt32OemHookStatusCodeLib.c
+C:\Program Files (x86)\Windows Kits\10\include\10.0.10150.0\ucrt\corecrt.h(135) : error C2061: syntax error : identifier '__crt_bool'
+C:\Program Files (x86)\Windows Kits\10\include\10.0.10150.0\ucrt\corecrt.h(135) : error C2059: syntax error : ';'
+C:\Program Files (x86)\Windows Kits\8.1\include\um\winnt.h(5105) : warning C4005: 'InterlockedCompareExchange64' : macro redefinition
+        c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Include\Common/WinNtInclude.h(40) : see previous definition of 'InterlockedCompareExchange64'
+C:\Program Files (x86)\Windows Kits\8.1\include\um\winnt.h(5156) : warning C4005: 'InterlockedIncrement' : macro redefinition
+        c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Include\Common/WinNtInclude.h(38) : see previous definition of 'InterlockedIncrement'
+C:\Program Files (x86)\Windows Kits\8.1\include\um\winnt.h(5161) : warning C4005: 'InterlockedDecrement' : macro redefinition
+        c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Include\Common/WinNtInclude.h(39) : see previous definition of 'InterlockedDecrement'
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Vc\bin\cl.exe"' : return code '0x2'
+Stop.
+
+
+build...
+ : error 7000: Failed to execute command
+	C:\Program Files (x86)\Microsoft Visual Studio 10.0\Vc\bin\nmake.exe /nologo tbuild [c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Build\NT32IA32\DEBUG_VS2010x86\IA32\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\PeiNt32OemHookStatusCodeLib]
+
+
+build...
+ : error F002: Failed to build module
+	c:\wdl\src\wdl\edk\udk2014.sp1.p1\myworkspace\Nt32Pkg\Library\PeiNt32OemHookStatusCodeLib\PeiNt32OemHookStatusCodeLib.inf [IA32, VS2010x86, DEBUG]
+
+- Failed -
+Build end time: 14:15:01, Oct.14 2015
+Build total time: 00:00:07
+
