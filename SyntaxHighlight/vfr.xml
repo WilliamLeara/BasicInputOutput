@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="vfr" ext="vfr hfr" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="no" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00// 01 02 03/* 04*/</Keywords>
+            <Keywords name="Numbers, prefix1">0x</Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">== ? . ; , = | [ ] ( ) \ : ! &lt; &gt; + - * % ~</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open">suppressif oneof grayoutif disableif form numeric formset</Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close">endif endoneof endform endnumeric endformset</Keywords>
+            <Keywords name="Folders in comment, open">#if #ifdef</Keywords>
+            <Keywords name="Folders in comment, middle">#else</Keywords>
+            <Keywords name="Folders in comment, close">#endif</Keywords>
+            <Keywords name="Keywords1">action&#x000D;&#x000A;banner&#x000D;&#x000A;boolval&#x000D;&#x000A;checkbox&#x000D;&#x000A;cond&#x000D;&#x000A;date&#x000D;&#x000A;defaultstore&#x000D;&#x000A;disableif&#x000D;&#x000A;dup&#x000D;&#x000A;efivarstore&#x000D;&#x000A;endaction&#x000D;&#x000A;endcheckbox&#x000D;&#x000A;enddate&#x000D;&#x000A;endform&#x000D;&#x000A;endguidop&#x000D;&#x000A;endif&#x000D;&#x000A;endlist&#x000D;&#x000A;endnumeric&#x000D;&#x000A;endoneof&#x000D;&#x000A;endpassword&#x000D;&#x000A;endrule&#x000D;&#x000A;endstring&#x000D;&#x000A;endtime&#x000D;&#x000A;find&#x000D;&#x000A;form&#x000D;&#x000A;formid&#x000D;&#x000A;formmap&#x000D;&#x000A;formset&#x000D;&#x000A;get&#x000D;&#x000A;goto&#x000D;&#x000A;grayoutif&#x000D;&#x000A;guidop&#x000D;&#x000A;help&#x000D;&#x000A;ideqid&#x000D;&#x000A;ideqval&#x000D;&#x000A;ideqvallist&#x000D;&#x000A;image&#x000D;&#x000A;inconsistentif&#x000D;&#x000A;label&#x000D;&#x000A;length&#x000D;&#x000A;locked&#x000D;&#x000A;match&#x000D;&#x000A;mid&#x000D;&#x000A;modal&#x000D;&#x000A;namevaluevarstore&#x000D;&#x000A;nosubmitif&#x000D;&#x000A;numeric&#x000D;&#x000A;oneof&#x000D;&#x000A;orderedlist&#x000D;&#x000A;password&#x000D;&#x000A;pushthis&#x000D;&#x000A;questionref&#x000D;&#x000A;questionrefval&#x000D;&#x000A;rule&#x000D;&#x000A;ruleref&#x000D;&#x000A;security&#x000D;&#x000A;set&#x000D;&#x000A;span&#x000D;&#x000A;string&#x000D;&#x000A;stringref&#x000D;&#x000A;stringrefval&#x000D;&#x000A;stringval&#x000D;&#x000A;struct&#x000D;&#x000A;subtitle&#x000D;&#x000A;suppressif&#x000D;&#x000A;text&#x000D;&#x000A;time&#x000D;&#x000A;token&#x000D;&#x000A;tolower&#x000D;&#x000A;toupper&#x000D;&#x000A;typedef&#x000D;&#x000A;unintval&#x000D;&#x000A;varstore&#x000D;&#x000A;varstoredevice&#x000D;&#x000A;map</Keywords>
+            <Keywords name="Keywords2">BOOLEAN&#x000D;&#x000A;EFI_HII_DATE&#x000D;&#x000A;EFI_HII_REF&#x000D;&#x000A;EFI_HII_TIME&#x000D;&#x000A;EFI_STRING_ID&#x000D;&#x000A;UINT16&#x000D;&#x000A;UINT32&#x000D;&#x000A;timeout&#x000D;&#x000A;datatype&#x000D;&#x000A;data&#x000D;&#x000A;catenate&#x000D;&#x000A;UINT64&#x000D;&#x000A;UINT8&#x000D;&#x000A;attribute&#x000D;&#x000A;class&#x000D;&#x000A;classguid&#x000D;&#x000A;config&#x000D;&#x000A;day&#x000D;&#x000A;default&#x000D;&#x000A;devicePath&#x000D;&#x000A;endresetbutton&#x000D;&#x000A;flags&#x000D;&#x000A;formsetguid&#x000D;&#x000A;guid&#x000D;&#x000A;help&#x000D;&#x000A;hour&#x000D;&#x000A;interval&#x000D;&#x000A;key&#x000D;&#x000D;&#x000A;line&#x000D;&#x000A;align&#x000A;mapguid&#x000D;&#x000A;maptitle&#x000D;&#x000A;maxcontainers&#x000D;&#x000A;maximum&#x000D;&#x000A;maxsize&#x000D;&#x000A;minimum&#x000D;&#x000A;minsize&#x000D;&#x000A;minute&#x000D;&#x000A;month&#x000D;&#x000A;name&#x000D;&#x000A;option&#x000D;&#x000A;prompt&#x000D;&#x000A;question&#x000D;&#x000A;questionid&#x000D;&#x000A;read&#x000D;&#x000A;refresh&#x000D;&#x000A;refreshguid&#x000D;&#x000A;resetbutton&#x000D;&#x000A;second&#x000D;&#x000A;step&#x000A;subclass&#x000D;&#x000A;text&#x000D;&#x000A;title&#x000D;&#x000A;value&#x000D;&#x000A;varid&#x000D;&#x000A;write&#x000D;&#x000A;year</Keywords>
+            <Keywords name="Keywords3">#define&#x000D;&#x000A;#include&#x000D;&#x000A;#pragma&#x000D;&#x000A;#endif&#x000D;&#x000A;#if&#x000D;&#x000A;#else&#x000D;&#x000A;#ifndef&#x000D;&#x000A;#undef&#x000D;&#x000A;#ifdef&#x000D;&#x000A;#if defined&#x000D;&#x000A;</Keywords>
+            <Keywords name="Keywords4">AND&#x000D;&#x000A;DAY_SUPPRESS&#x000D;&#x000A;DEFAULT&#x000D;&#x000A;DISK_DEVICE&#x000D;&#x000A;DISPLAY_INT_DEC&#x000D;&#x000A;DISPLAY_UINT_DEC&#x000D;&#x000A;DISPLAY_UINT_DEC&#x000D;&#x000A;DISPLAY_UINT_HEX&#x000D;&#x000A;FALSE&#x000D;&#x000A;FIRST_NON_MATCH&#x000D;&#x000A;FRONT_PAGE&#x000D;&#x000A;GENERAL_APPLICATION&#x000D;&#x000A;HORIZONTAL&#x000D;&#x000A;HOUR_SUPPRESS&#x000D;&#x000A;INPUT_DEVICE&#x000D;&#x000A;INSENSITIVE&#x000D;&#x000A;INTERACTIVE&#x000D;&#x000A;LAST_NON_MATCH&#x000D;&#x000A;MINUTE_SUPPRESS&#x000D;&#x000A;MONTH_SUPPRESS&#x000D;&#x000A;MULTI_LINE&#x000D;&#x000A;NETWORK_DEVICE&#x000D;&#x000A;NOEMPTY&#x000D;&#x000A;NON_DEVICE&#x000D;&#x000A;NOT&#x000D;&#x000A;NUMERIC_SIZE_1&#x000D;&#x000A;NUMERIC_SIZE_2&#x000D;&#x000A;NUMERIC_SIZE_4&#x000D;&#x000A;NUMERIC_SIZE_8&#x000D;&#x000A;ONBOARD_DEVICE&#x000D;&#x000A;ONE&#x000D;&#x000A;ONES&#x000D;&#x000A;OPTIONS_ONLY&#x000D;&#x000A;OPTION_DEFAULT&#x000D;&#x000A;OPTION_DEFAULT_MFG&#x000D;&#x000A;OR&#x000D;&#x000A;READ_ONLY&#x000D;&#x000A;RESET_REQUIRED&#x000D;&#x000A;SECOND_SUPPRESS&#x000D;&#x000A;SENSITIVE&#x000D;&#x000A;SETUP_APPLICATION&#x000D;&#x000A;SINGLE_USE&#x000D;&#x000A;STORAGE_NORMAL&#x000D;&#x000A;STORAGE_NORMAL&#x000D;&#x000A;STORAGE_TIME&#x000D;&#x000A;STORAGE_TIME&#x000D;&#x000A;STORAGE_WAKEUP&#x000D;&#x000A;STORAGE_WAKEUP&#x000D;&#x000A;TRUE&#x000D;&#x000A;UNIQUE&#x000D;&#x000A;VIDEO_DEVICE&#x000D;&#x000A;YEAR_SUPPRESS&#x000D;&#x000A;ZERO&#x000D;&#x000A;IMAGE_TOKEN&#x000D;&#x000A;STRING_TOKEN&#x000D;&#x000A;SUBTITLE&#x000D;&#x000A;SEPARATOR&#x000D;&#x000A;MANUFACTURING&#x000D;&#x000A;center&#x000D;&#x000A;right&#x000D;&#x000A;left&#x000D;&#x000A;pop&#x000D;&#x000A;push&#x000D;&#x000A;show</Keywords>
+            <Keywords name="Keywords5"></Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00 01 02, 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="004040" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="2" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="804000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="008080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="FF0080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="804000" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
